@@ -1,0 +1,1 @@
+Metrok is the capital city of the province of [[Metropolitan]]

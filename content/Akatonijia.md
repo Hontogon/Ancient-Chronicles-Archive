@@ -1,0 +1,2 @@
+
+Akatonijia is one of the main provinces of WW. the name Akatonijia is derived from the ancient name [[Akaton]], which was the name of the entire province in the days of the [[Ancients]]. today, the name Akaton is still part of the province, now reserved solely for its capital city of [[Akaton Village]]
