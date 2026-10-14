@@ -1,4 +1,4 @@
-⚠︎
+🛑
 
 Hogonon Hontogon is one of  [[The Twelve Ancients]], specifically, the ancient of nature from the line of [[Hontogon]] of the nature ancients
 

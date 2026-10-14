@@ -39,7 +39,7 @@ For these reasons, I have created a simple icon guide that you can use to tell i
 Here is the guide:
 
 ☐ - This icon marks WIP pages that contain unfinished or unestablished lore/ideas
-⚠︎ - This icon marks pages containing major spoilers
+🛑 - This icon marks pages containing major spoilers
 
 (please note that most WIP pages should be assumed to contain spoilers in general, and thus will not all be marked with the spoilers icon)
 
