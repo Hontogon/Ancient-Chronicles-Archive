@@ -1,9 +1,13 @@
 
+☐ Note: W
+
 - Based on the Holy Tounge spoken by the gods in the heavenly realm
 - Germanic/English Sounding
 - Calm rather than aggressive (unlike German or Dutch, more like Norwegian)
 - No W sound (maybe)
 - categorized as a root script, where each glyph or letter represents a primordial root rather than a sound.
+
+
 ---
 
 Some Observations:
@@ -27,7 +31,6 @@ Analan Sea
 
 Teclan Islands:
 Tajoon
-Tit
 Gengrom
 
 Quintalang Islands:

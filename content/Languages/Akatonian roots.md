@@ -7,7 +7,7 @@ Aska- / Aka-  | Untamable, Uncontrollable, Wild
 
 
 Derived Vocabulary:
-Askalon (original) "the untamable flow" | Akaton "wild land" 
+[[Askalon]] (original) "the untamable flow" | Akaton "wild land" 
 
 ---
 -On (root of -ton) | Soil, earth, dirt, nature

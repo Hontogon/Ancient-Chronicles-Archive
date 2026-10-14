@@ -1,0 +1,1 @@
+The Twelve Ancients are the original leaders and appointed heads of the twelve ancient tribes establish by the [[Great Deity]] 

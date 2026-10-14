@@ -1,0 +1,1 @@
+The name Hontogon refers to the lineage of the line of Hogonon, and serves as the earthly family name to their ancestry. 
