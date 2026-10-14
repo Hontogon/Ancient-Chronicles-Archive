@@ -1,5 +1,5 @@
 
-☐ Note: W
+☐ (this page is an in-progress archive of the current Akatonian language development and will contain potential story spoilers)
 
 - Based on the Holy Tounge spoken by the gods in the heavenly realm
 - Germanic/English Sounding

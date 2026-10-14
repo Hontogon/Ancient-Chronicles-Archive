@@ -1,6 +1,6 @@
 Welcome to the official Ancient Chronicles Lore Bible and Archive!
 
-Please take some time to read a quick page navigation guide here > [[READ ME!]] 
+Please take some time to read a quick page navigation guide and important archive information here before you begin > [[READ ME!]]
 Additional background info and terms of use here > [[Terms of Use]] 
 
 ---

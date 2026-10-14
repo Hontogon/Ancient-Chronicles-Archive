@@ -1,6 +1,7 @@
 ---
 
 ---
+☐ (this page is marked as unfinished but can still be read, as it is part of an expanding language dictionary. while no major spoilers are present, future stories that use the language to tell a story may be spoiled if the defenitions of the words on this page are read fully)
 
 ---
 Aska- / Aka-  | Untamable, Uncontrollable, Wild

@@ -1,3 +1,4 @@
+⚠︎
 
 Askalon is one of the [[Thirteen supreme gods]] who serve as the heads of the twelve ancients and their tribes
 
