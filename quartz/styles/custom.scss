@@ -6,11 +6,11 @@
   // ☀️ OBSIDIAN DEFAULT LIGHT MODE PALETTE
   // ==========================================
   :root, [data-theme="light"], .theme-light {
-    --light: #F2EDDF !important;         // Obsidian app background
+    --light: #FCF5E4 !important;         // Obsidian app background
     --lightgray: #e0e0e0 !important;     // Borders and grid rules
     --gray: #999999 !important;          // Muted text & metadata
-    --darkgray: #A6A298 !important;      // Main body text color
-    --dark: #A6A298 !important;          // Title and header text
+    --darkgray: #8A8B99 !important;      // Main body text color
+    --dark: #8A8B99 !important;          // Title and header text
     --secondary: #2463d1 !important;     // Standard interactive link blue
     --tertiary: #164396 !important;      // Darker blue link hover state
 
@@ -19,8 +19,8 @@
     .right.sidebar,
     .explorer,
     .graph {
-      background-color: #D9D3C1 !important;
-      background: #D9D3C1 !important;
+      background-color: #D9D0C1 !important;
+      background: #D9D0C1 !important;
       border: none !important;
     }
 
