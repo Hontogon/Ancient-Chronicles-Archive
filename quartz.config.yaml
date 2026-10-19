@@ -22,8 +22,8 @@ configuration:
     colors:
       lightMode:
         light: "#caa77c"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
+        lightgray: "#ffffff"
+        gray: "#fffff"
         darkgray: "#4e4e4e"
         dark: "#2b2b2b"
         secondary: "#284b63"
