@@ -14,27 +14,42 @@
     --secondary: #2463d1 !important;     // Standard interactive link blue
     --tertiary: #164396 !important;      // Darker blue link hover state
 
-    // --- FIXES THE WHITE BACKGROUND SHIELD ---
-    // Forces the broad outer layout page, main center text column, and footer to adopt your theme color
+    // --- MAIN BODY & GRAPH CONTAINER BACKGROUND ---
+    // Sets your main text column, footer, and Graph View boxes to match the cream canvas background
     .page, 
     #quartz-body,
     .center,
     article,
-    footer {
-      background-color: #FCF5E4 !important;
-      background: #FCF5E4 !important;
-    }
-
-    // Synchronizes the structural sidebars and components with your chosen color
-    .left.sidebar,
-    .right.sidebar,
-    .explorer,
+    footer,
     .graph,
     .graph > div,
     canvas {
+      background-color: #FCF5E4 !important;
+      background: #FCF5E4 !important;
+      border: none !important;
+    }
+
+    // --- SIDEBARS & NAVIGATION PANELS ---
+    // Coordinates your side columns and Explorer file trees into your darker tan accent color
+    .left.sidebar,
+    .right.sidebar,
+    .explorer {
       background-color: #D9D0C1 !important;
       background: #D9D0C1 !important;
       border: none !important;
+    }
+
+    // --- SEARCH BAR & SEARCH NAVIGATION FIX ---
+    // Forces the white search field box and background components to match your tan sidebar palette
+    #search-bar,
+    .search-layout,
+    .search-input,
+    input[type="text"],
+    .search-button {
+      background-color: #D9D0C1 !important;
+      background: #D9D0C1 !important;
+      color: #8A8B99 !important;
+      border: 1px solid #e0e0e0 !important;
     }
 
     // Applies base font typography
@@ -67,7 +82,12 @@
     .explorer,
     .graph,
     .graph > div,
-    canvas {
+    canvas,
+    #search-bar,
+    .search-layout,
+    .search-input,
+    input[type="text"],
+    .search-button {
       background-color: #1e1e1e !important;
       background: #1e1e1e !important;
       border: none !important;
