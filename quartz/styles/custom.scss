@@ -5,7 +5,7 @@
   // ==========================================
   // ☀️ OBSIDIAN DEFAULT LIGHT MODE PALETTE
   // ==========================================
-  :root, [data-theme="light"], .theme-light {
+    :root, [data-theme="light"], .theme-light {
     --light: #FCF5E4 !important;         // Obsidian app background
     --lightgray: #e0e0e0 !important;     // Borders and grid rules
     --gray: #999999 !important;          // Muted text & metadata
@@ -14,7 +14,15 @@
     --secondary: #2463d1 !important;     // Standard interactive link blue
     --tertiary: #164396 !important;      // Darker blue link hover state
 
-    // Synchronizes the structural sidebars and components with the main page canvas
+    // --- FIXES THE WHITE BACKGROUND SHIELD ---
+    // Forces the broad outer layout page wrapper to adopt your theme color
+    .page, 
+    #quartz-body {
+      background-color: #FCF5E4 !important;
+      background: #FCF5E4 !important;
+    }
+
+    // Synchronizes the structural sidebars and components with your chosen color
     .left.sidebar,
     .right.sidebar,
     .explorer,
@@ -23,6 +31,8 @@
       background: #D9D0C1 !important;
       border: none !important;
     }
+  }
+
 
     // Applies base font typography
     body, p, li, span, .explorer a, .folder-title, .file-title {
