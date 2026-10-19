@@ -2,48 +2,62 @@
 
 // put your custom CSS here!
 @layer quartz-theme {
-  // FORCE LIGHT MODE CONTAINER BACKGROUNDS
+  // ==========================================
+  // ☀️ OBSIDIAN DEFAULT LIGHT MODE PALETTE
+  // ==========================================
   :root, [data-theme="light"], .theme-light {
-    --light: #FF0000 !important;       
-    --lightgray: #FF0000 !important;   
-    --gray: #b8b8b8 !important;        
-    --darkgray: #4e4e4e !important;    
-    --dark: #2b2b2b !important;        
-    --secondary: #284b63 !important;   
-    --tertiary: #84a59d !important;    
+    --light: #ffffff !important;         // Obsidian app background
+    --lightgray: #e0e0e0 !important;     // Borders and grid rules
+    --gray: #999999 !important;          // Muted text & metadata
+    --darkgray: #2e2e2e !important;      // Main body text color
+    --dark: #000000 !important;          // Title and header text
+    --secondary: #2463d1 !important;     // Standard interactive link blue
+    --tertiary: #164396 !important;      // Darker blue link hover state
 
-    // Directly paint the background surfaces red
-    body, 
-    .page, 
-    #quartz-root, 
-    #quartz-body, 
-    .center, 
-    .left.sidebar, 
-    .right.sidebar {
-      background: #FF0000 !important;
-      background-color: #FF0000 !important;
+    // Synchronizes the structural sidebars and components with the main page canvas
+    .left.sidebar,
+    .right.sidebar,
+    .explorer,
+    .graph {
+      background-color: #ffffff !important;
+      background: #ffffff !important;
+      border: none !important;
+    }
+
+    // Applies base font typography
+    body, p, li, span, .explorer a, .folder-title, .file-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      color: #2e2e2e !important;
     }
   }
 
-  // FORCE DARK MODE CONTAINER BACKGROUNDS
+  // ==========================================
+  // 🌙 OBSIDIAN DEFAULT DARK MODE PALETTE
+  // ==========================================
   [data-theme="dark"], .theme-dark {
-    --light: #161618 !important;       
-    --lightgray: #393639 !important;   
-    --gray: #646464 !important;        
-    --darkgray: #d4d4d4 !important;    
-    --dark: #ebebec !important;        
-    --secondary: #7b97aa !important;   
-    --tertiary: #84a59d !important;    
+    --light: #1e1e1e !important;         // Obsidian dark background color
+    --lightgray: #363636 !important;     // Dark theme division lines
+    --gray: #7a7a7a !important;          // Dark theme metadata/muted entries
+    --darkgray: #dc2020 !important;      // This variable acts as base font text color (Obsidian off-white)
+    --darkgray: #e3e3e3 !important;      // Crisp text color readable over dark slate
+    --dark: #ffffff !important;          // White title and header text
+    --secondary: #5887ff !important;     // Lighter, luminous blue for dark mode link clarity
+    --tertiary: #7fa5ff !important;      // Hover link accent
 
-    body, 
-    .page, 
-    #quartz-root, 
-    #quartz-body, 
-    .center, 
-    .left.sidebar, 
-    .right.sidebar {
-      background: #161618 !important;
-      background-color: #161618 !important;
+    // Matches panels cleanly to the base slate background color
+    .left.sidebar,
+    .right.sidebar,
+    .explorer,
+    .graph {
+      background-color: #1e1e1e !important;
+      background: #1e1e1e !important;
+      border: none !important;
+    }
+
+    body, p, li, span, .explorer a, .folder-title, .file-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      color: #e3e3e3 !important;
     }
   }
 }
+
