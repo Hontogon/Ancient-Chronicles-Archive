@@ -87,3 +87,14 @@
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
 }
+
+// Force the Light Mode background to be red
+:root[aria-theme="light"] {
+  --light: #FF0000 !important;
+  --lightgray: #FF0000 !important;
+}
+
+// Keep Dark Mode normal (or edit it here too if desired)
+:root[aria-theme="dark"] {
+  --light: #161618;
+}
