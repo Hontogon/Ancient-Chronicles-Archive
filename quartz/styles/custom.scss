@@ -24,62 +24,59 @@
       background: #FCF5E4 !important;
     }
 
-    // --- OUTER SIDEBAR WRAPPERS (SQUARE EDGES) ---
-    // Kept flat and sharp while providing horizontal structural spacing
-    .left.sidebar,
-    .right.sidebar {
-      background: transparent !important;
-      background-color: transparent !important;
-      border: none !important;
-      border-radius: 0px !important;       // Forces sharp layout edges
-      padding-left: 20px !important;       // Separates the content column cleanly
-      padding-right: 20px !important;
-    }
-
-    // --- INNER EXPLORER & NAVIGATION TEXT ---
-    // Clears background colors and applies precise padding to fix crowded labels
-    .explorer {
-      background-color: transparent !important;
-      background: transparent !important;
-      border: none !important;
-      border-radius: 0px !important;
-      box-shadow: none !important;
-      padding-left: 15px !important;       // Pushes folder dropdown text away from the sidebar edge
-      padding-right: 15px !important;
-    }
-
-    // Targets the "Explorer" header text specifically to keep it from looking crowded
-    .explorer h1, 
-    .explorer button,
-    #explorer-title {
-      padding-left: 15px !important;
-      margin-left: 0px !important;
-    }
-
-    // --- INNER GRAPH VIEW BOX (ROUNDED CANVAS CONTAINER) ---
-    // Converts the graph frame into a rounded container asset
+    // --- GRAPH VIEW BOX MATCHING ---
     .graph,
     .graph > div,
     .graph-container,
     .graph-outer,
     canvas {
-      background-color: #FCF5E4 !important; // Keeps the canvas element color clean
+      background-color: #FCF5E4 !important;
       background: #FCF5E4 !important;
       border: none !important;
       box-shadow: none !important;
-      border-radius: 12px !important;       // Rounds the internal edge of the graph layout box
     }
 
-    // Targets the "Graph View" header label to add crucial text spacing
+    // --- OUTER SIDEBAR WRAPPERS (SQUARE EDGES) ---
+    .left.sidebar,
+    .right.sidebar {
+      background: transparent !important;
+      background-color: transparent !important;
+      border: none !important;
+      border-radius: 0px !important;       
+      padding-left: 20px !important;       
+      padding-right: 20px !important;
+    }
+
+    // --- UNIFIED MOBILE & DESKTOP EXPLORER FIX ---
+    // This targets the explicit mobile list selectors seen in your DevTools screenshot
+    .explorer,
+    .explorer-content,
+    .nav-files-container,
+    #explorer-30,
+    .folder-outer,
+    .mobile-only {
+      background-color: #D9D0C1 !important;
+      background: #D9D0C1 !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding-left: 15px !important;       
+      padding-right: 15px !important;
+    }
+
+    // Targets the title headings to add structural padding
+    .explorer h1, 
+    .explorer h2,
+    .explorer button,
+    #explorer-title,
     .right.sidebar h3,
     .right.sidebar h4,
     #graph-title {
-      padding-left: 15px !important;       // Prevents text from sitting flush against structural junctions
+      padding-left: 15px !important;       
       margin-bottom: 12px !important;
+      background: transparent !important;
     }
 
-    // --- INNER SEARCH FIELD REFINEMENTS (ROUNDED SEARCH BOX) ---
-    // Centers the inner search text and turns the capsule into a rounded panel element
+    // --- INNER SEARCH FIELD REFINEMENTS ---
     .search,
     #search-bar,
     .search-layout,
@@ -91,8 +88,8 @@
       background: #D9D0C1 !important;
       color: #8A8B99 !important;
       border: 1px solid rgba(0,0,0,0.05) !important;
-      border-radius: 8px !important;       // Softly curves the top search text navigation panel
-      padding-left: 12px !important;       // Adds internal breathing space for typed search queries
+      border-radius: 8px !important;       
+      padding-left: 12px !important;       
     }
 
     // Applies base font typography
@@ -122,6 +119,9 @@
     .left.sidebar,
     .right.sidebar,
     .explorer,
+    .explorer-content,
+    .nav-files-container,
+    .folder-outer,
     .graph,
     .graph > div,
     .graph-container,
