@@ -6,64 +6,57 @@
   // ☀️ OBSIDIAN DEFAULT LIGHT MODE PALETTE
   // ==========================================
   :root, [data-theme="light"], .theme-light {
-    --light: #FCF5E4 !important;         // Obsidian app background
-    --lightgray: #e0e0e0 !important;     // Borders and grid rules
-    --gray: #999999 !important;          // Muted text & metadata
-    --darkgray: #8A8B99 !important;      // Main body text color
-    --dark: #8A8B99 !important;          // Title and header text
-    --secondary: #2463d1 !important;     // Standard interactive link blue
-    --tertiary: #164396 !important;      // Darker blue link hover state
+    --light: #F4EFE2 !important;         // Clean warm cream background
+    --lightgray: #e5dec9 !important;     // Subtle structural lines
+    --gray: #7a7565 !important;          // Muted metadata accents
+    --darkgray: #2e2a24 !important;      // High-contrast charcoal text body color
+    --dark: #1a1713 !important;          // Bold dark titles and header rules
+    --secondary: #3b5087 !important;     // Muted historical blue for functional links
+    --tertiary: #526ca3 !important;      // Clear link hover states
 
-    // --- MAIN BODY BACKGROUND ---
+    // --- STRUCTURAL CANVAS MAPPING ---
     .page, 
     #quartz-body,
     .center,
     article,
-    footer {
-      background-color: #FCF5E4 !important;
-      background: #FCF5E4 !important;
-    }
-
-    // --- GRAPH VIEW BOX MATCHING ---
+    footer,
     .graph,
     .graph > div,
     .graph-container,
     .graph-outer,
     canvas {
-      background-color: #FCF5E4 !important;
-      background: #FCF5E4 !important;
+      background-color: #F4EFE2 !important;
+      background: #F4EFE2 !important;
       border: none !important;
       box-shadow: none !important;
     }
 
-    // --- OUTER SIDEBAR WRAPPERS (SQUARE EDGES) ---
+    // --- STRUCTURAL SIDEBAR ACCENTS ---
     .left.sidebar,
-    .right.sidebar {
-      background: transparent !important;
-      background-color: transparent !important;
-      border: none !important;
-      border-radius: 0px !important;       
-      padding-left: 20px !important;       
-      padding-right: 20px !important;
-    }
-
-    // --- UNIFIED MOBILE & DESKTOP EXPLORER FIX ---
-    // This targets the explicit mobile list selectors seen in your DevTools screenshot
+    .right.sidebar,
     .explorer,
     .explorer-content,
     .nav-files-container,
-    #explorer-30,
     .folder-outer,
     .mobile-only {
-      background-color: #D9D0C1 !important;
-      background: #D9D0C1 !important;
+      background-color: #E6DCB8 !important; // Deep organic sand background
+      background: #E6DCB8 !important;
       border: none !important;
       box-shadow: none !important;
-      padding-left: 15px !important;       
+    }
+
+    // --- STRUCTURAL TEXT MARGIN FIXES ---
+    .left.sidebar,
+    .right.sidebar {
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+
+    .explorer {
+      padding-left: 15px !important;
       padding-right: 15px !important;
     }
 
-    // Targets the title headings to add structural padding
     .explorer h1, 
     .explorer h2,
     .explorer button,
@@ -76,7 +69,7 @@
       background: transparent !important;
     }
 
-    // --- INNER SEARCH FIELD REFINEMENTS ---
+    // --- INTEGRATED SEARCH BAR FIELDS ---
     .search,
     #search-bar,
     .search-layout,
@@ -84,18 +77,19 @@
     input[type="text"],
     .search-button,
     #search-container {
-      background-color: #D9D0C1 !important;
-      background: #D9D0C1 !important;
-      color: #8A8B99 !important;
-      border: 1px solid rgba(0,0,0,0.05) !important;
-      border-radius: 8px !important;       
-      padding-left: 12px !important;       
+      background-color: #E6DCB8 !important;
+      background: #E6DCB8 !important;
+      color: #2e2a24 !important;
+      border: 1px solid rgba(0,0,0,0.06) !important;
+      border-radius: 6px !important;
+      padding-left: 12px !important;
     }
 
-    // Applies base font typography
-    body, p, li, span, .explorer a, .folder-title, .file-title {
+    // --- DENSE TYPOGRAPHY SHIELD ---
+    // Forces the text to render in high-contrast charcoal black
+    body, p, li, span, .explorer a, .folder-title, .file-title, a {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-      color: #8A8B99 !important;
+      color: #2e2a24 !important;           
     }
   }
 
@@ -103,13 +97,13 @@
   // 🌙 OBSIDIAN DEFAULT DARK MODE PALETTE
   // ==========================================
   [data-theme="dark"], .theme-dark {
-    --light: #1e1e1e !important;         
-    --lightgray: #363636 !important;     
-    --gray: #7a7a7a !important;          
-    --darkgray: #e3e3e3 !important;      
+    --light: #161617 !important;         
+    --lightgray: #2a2a2c !important;     
+    --gray: #646467 !important;          
+    --darkgray: #e1e1e6 !important;      
     --dark: #ffffff !important;          
-    --secondary: #5887ff !important;     
-    --tertiary: #7fa5ff !important;      
+    --secondary: #6085db !important;     
+    --tertiary: #83a2eb !important;      
 
     .page, 
     #quartz-body,
@@ -134,15 +128,15 @@
     input[type="text"],
     .search-button,
     #search-container {
-      background-color: #1e1e1e !important;
-      background: #1e1e1e !important;
+      background-color: #161617 !important;
+      background: #161617 !important;
       border: none !important;
       box-shadow: none !important;
     }
 
     body, p, li, span, .explorer a, .folder-title, .file-title {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-      color: #e3e3e3 !important;
+      color: #e1e1e6 !important;
     }
   }
 }
