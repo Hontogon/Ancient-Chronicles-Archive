@@ -1,7 +1,5 @@
 @use "./variables.scss" as *;
 
-@use "./variables.scss" as *;
-
 // put your custom CSS here!
 @layer quartz-theme {
   // ==========================================
@@ -17,9 +15,12 @@
     --tertiary: #164396 !important;      // Darker blue link hover state
 
     // --- FIXES THE WHITE BACKGROUND SHIELD ---
-    // Forces the broad outer layout page wrapper to adopt your theme color
+    // Forces the broad outer layout page, main center text column, and footer to adopt your theme color
     .page, 
-    #quartz-body {
+    #quartz-body,
+    .center,
+    article,
+    footer {
       background-color: #FCF5E4 !important;
       background: #FCF5E4 !important;
     }
@@ -28,7 +29,9 @@
     .left.sidebar,
     .right.sidebar,
     .explorer,
-    .graph {
+    .graph,
+    .graph > div,
+    canvas {
       background-color: #D9D0C1 !important;
       background: #D9D0C1 !important;
       border: none !important;
@@ -54,10 +57,17 @@
     --tertiary: #7fa5ff !important;      // Hover link accent
 
     // Matches panels cleanly to the base slate background color
+    .page, 
+    #quartz-body,
+    .center,
+    article,
+    footer,
     .left.sidebar,
     .right.sidebar,
     .explorer,
-    .graph {
+    .graph,
+    .graph > div,
+    canvas {
       background-color: #1e1e1e !important;
       background: #1e1e1e !important;
       border: none !important;
