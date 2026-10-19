@@ -15,14 +15,20 @@
     --tertiary: #164396 !important;      // Darker blue link hover state
 
     // --- MAIN BODY & GRAPH CONTAINER BACKGROUND ---
-    // Sets your main text column, footer, and Graph View boxes to match the cream canvas background
     .page, 
     #quartz-body,
     .center,
     article,
-    footer,
+    footer {
+      background-color: #FCF5E4 !important;
+      background: #FCF5E4 !important;
+    }
+
+    // --- GRAPH VIEW BOX MATCHING ---
+    // Clears the graph background and ensures the outer element doesn't shield the center color
     .graph,
     .graph > div,
+    .graph-container,
     canvas {
       background-color: #FCF5E4 !important;
       background: #FCF5E4 !important;
@@ -30,26 +36,32 @@
     }
 
     // --- SIDEBARS & NAVIGATION PANELS ---
-    // Coordinates your side columns and Explorer file trees into your darker tan accent color
+    // Groups your structural containers, updates them to tan, rounds corners, and adds safety margins
     .left.sidebar,
     .right.sidebar,
     .explorer {
       background-color: #D9D0C1 !important;
       background: #D9D0C1 !important;
       border: none !important;
+      border-radius: 12px !important;       // Beautifully rounds the container boxes
+      padding: 16px !important;            // Adds essential breathing room between text and borders
+      margin-bottom: 16px !important;      // Keeps containers spaced cleanly
     }
 
-    // --- SEARCH BAR & SEARCH NAVIGATION FIX ---
-    // Forces the white search field box and background components to match your tan sidebar palette
+    // --- SEARCH BAR COMPONENTS & DROPDOWNS ---
+    // Targets every layered element inside the Quartz search system to turn it tan and round it out
+    .search,
     #search-bar,
     .search-layout,
     .search-input,
     input[type="text"],
-    .search-button {
+    .search-button,
+    #search-container {
       background-color: #D9D0C1 !important;
       background: #D9D0C1 !important;
       color: #8A8B99 !important;
-      border: 1px solid #e0e0e0 !important;
+      border: 1px solid rgba(0,0,0,0.05) !important;
+      border-radius: 8px !important;       // Smoothly rounds the navigation bar field corners
     }
 
     // Applies base font typography
@@ -71,7 +83,6 @@
     --secondary: #5887ff !important;     // Lighter, luminous blue for dark mode link clarity
     --tertiary: #7fa5ff !important;      // Hover link accent
 
-    // Matches panels cleanly to the base slate background color
     .page, 
     #quartz-body,
     .center,
@@ -82,15 +93,20 @@
     .explorer,
     .graph,
     .graph > div,
+    .graph-container,
     canvas,
+    .search,
     #search-bar,
     .search-layout,
     .search-input,
     input[type="text"],
-    .search-button {
+    .search-button,
+    #search-container {
       background-color: #1e1e1e !important;
       background: #1e1e1e !important;
       border: none !important;
+      border-radius: 12px !important;
+      padding: 16px !important;
     }
 
     body, p, li, span, .explorer a, .folder-title, .file-title {
