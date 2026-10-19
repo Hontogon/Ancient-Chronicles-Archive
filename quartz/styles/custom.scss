@@ -1,3 +1,22 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+:root, [data-theme="light"], .theme-light {
+  --light: #FF0000 !important;       
+  --lightgray: #FF0000 !important;   
+  --gray: #b8b8b8 !important;        
+  --darkgray: #4e4e4e !important;    
+  --dark: #2b2b2b !important;        
+  --secondary: #284b63 !important;   
+  --tertiary: #84a59d !important;    
+}
+
+[data-theme="dark"], .theme-dark {
+  --light: #161618 !important;       
+  --lightgray: #393639 !important;   
+  --gray: #646464 !important;        
+  --darkgray: #d4d4d4 !important;    
+  --dark: #ebebec !important;        
+  --secondary: #7b97aa !important;   
+  --tertiary: #84a59d !important;    
+}
