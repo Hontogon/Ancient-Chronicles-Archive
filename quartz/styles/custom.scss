@@ -14,7 +14,7 @@
     --secondary: #2463d1 !important;     // Standard interactive link blue
     --tertiary: #164396 !important;      // Darker blue link hover state
 
-    // --- MAIN BODY & GRAPH CONTAINER BACKGROUND ---
+    // --- MAIN BODY BACKGROUND ---
     .page, 
     #quartz-body,
     .center,
@@ -24,32 +24,62 @@
       background: #FCF5E4 !important;
     }
 
-    // --- GRAPH VIEW BOX MATCHING ---
-    // Clears the graph background and ensures the outer element doesn't shield the center color
+    // --- OUTER SIDEBAR WRAPPERS (SQUARE EDGES) ---
+    // Kept flat and sharp while providing horizontal structural spacing
+    .left.sidebar,
+    .right.sidebar {
+      background: transparent !important;
+      background-color: transparent !important;
+      border: none !important;
+      border-radius: 0px !important;       // Forces sharp layout edges
+      padding-left: 20px !important;       // Separates the content column cleanly
+      padding-right: 20px !important;
+    }
+
+    // --- INNER EXPLORER & NAVIGATION TEXT ---
+    // Clears background colors and applies precise padding to fix crowded labels
+    .explorer {
+      background-color: transparent !important;
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0px !important;
+      box-shadow: none !important;
+      padding-left: 15px !important;       // Pushes folder dropdown text away from the sidebar edge
+      padding-right: 15px !important;
+    }
+
+    // Targets the "Explorer" header text specifically to keep it from looking crowded
+    .explorer h1, 
+    .explorer button,
+    #explorer-title {
+      padding-left: 15px !important;
+      margin-left: 0px !important;
+    }
+
+    // --- INNER GRAPH VIEW BOX (ROUNDED CANVAS CONTAINER) ---
+    // Converts the graph frame into a rounded container asset
     .graph,
     .graph > div,
     .graph-container,
+    .graph-outer,
     canvas {
-      background-color: #FCF5E4 !important;
+      background-color: #FCF5E4 !important; // Keeps the canvas element color clean
       background: #FCF5E4 !important;
       border: none !important;
+      box-shadow: none !important;
+      border-radius: 12px !important;       // Rounds the internal edge of the graph layout box
     }
 
-    // --- SIDEBARS & NAVIGATION PANELS ---
-    // Groups your structural containers, updates them to tan, rounds corners, and adds safety margins
-    .left.sidebar,
-    .right.sidebar,
-    .explorer {
-      background-color: #D9D0C1 !important;
-      background: #D9D0C1 !important;
-      border: none !important;
-      border-radius: 12px !important;       // Beautifully rounds the container boxes
-      padding: 16px !important;            // Adds essential breathing room between text and borders
-      margin-bottom: 16px !important;      // Keeps containers spaced cleanly
+    // Targets the "Graph View" header label to add crucial text spacing
+    .right.sidebar h3,
+    .right.sidebar h4,
+    #graph-title {
+      padding-left: 15px !important;       // Prevents text from sitting flush against structural junctions
+      margin-bottom: 12px !important;
     }
 
-    // --- SEARCH BAR COMPONENTS & DROPDOWNS ---
-    // Targets every layered element inside the Quartz search system to turn it tan and round it out
+    // --- INNER SEARCH FIELD REFINEMENTS (ROUNDED SEARCH BOX) ---
+    // Centers the inner search text and turns the capsule into a rounded panel element
     .search,
     #search-bar,
     .search-layout,
@@ -61,7 +91,8 @@
       background: #D9D0C1 !important;
       color: #8A8B99 !important;
       border: 1px solid rgba(0,0,0,0.05) !important;
-      border-radius: 8px !important;       // Smoothly rounds the navigation bar field corners
+      border-radius: 8px !important;       // Softly curves the top search text navigation panel
+      padding-left: 12px !important;       // Adds internal breathing space for typed search queries
     }
 
     // Applies base font typography
@@ -75,13 +106,13 @@
   // 🌙 OBSIDIAN DEFAULT DARK MODE PALETTE
   // ==========================================
   [data-theme="dark"], .theme-dark {
-    --light: #1e1e1e !important;         // Obsidian dark background color
-    --lightgray: #363636 !important;     // Dark theme division lines
-    --gray: #7a7a7a !important;          // Dark theme metadata/muted entries
-    --darkgray: #e3e3e3 !important;      // Crisp text color readable over dark slate
-    --dark: #ffffff !important;          // White title and header text
-    --secondary: #5887ff !important;     // Lighter, luminous blue for dark mode link clarity
-    --tertiary: #7fa5ff !important;      // Hover link accent
+    --light: #1e1e1e !important;         
+    --lightgray: #363636 !important;     
+    --gray: #7a7a7a !important;          
+    --darkgray: #e3e3e3 !important;      
+    --dark: #ffffff !important;          
+    --secondary: #5887ff !important;     
+    --tertiary: #7fa5ff !important;      
 
     .page, 
     #quartz-body,
@@ -94,6 +125,7 @@
     .graph,
     .graph > div,
     .graph-container,
+    .graph-outer,
     canvas,
     .search,
     #search-bar,
@@ -105,8 +137,7 @@
       background-color: #1e1e1e !important;
       background: #1e1e1e !important;
       border: none !important;
-      border-radius: 12px !important;
-      padding: 16px !important;
+      box-shadow: none !important;
     }
 
     body, p, li, span, .explorer a, .folder-title, .file-title {
