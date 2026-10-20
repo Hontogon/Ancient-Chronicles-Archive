@@ -1,13 +1,95 @@
 @use "./variables.scss" as *;
 
 // ==========================================
-// 📜 REGISTER CUSTOM FANTASY FONT (WITH BASE PATH)
+// 📜 REGISTER CUSTOM FANTASY FONT
 // ==========================================
 @font-face {
   font-family: 'TimeScript';
-  // Added your GitHub repository name so the server can track down the file
-  src: url('/Ancient-Chronicles-Archive/static/fonts/TimeScript-Regular.ttf') format('truetype'); 
+  // Using a relative path allows Quartz's bundler to automatically handle the GitHub Pages repository subfolder cleanly
+  src: url("../static/fonts/TimeScript-Regular.ttf") format("truetype"); 
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@layer quartz-theme {
+  // ==========================================
+  // ☀️ OBSIDIAN DEFAULT LIGHT MODE PALETTE
+  // ==========================================
+  :root, [data-theme="light"], .theme-light {
+    --light: #F4EFE2 !important;         // Clean warm cream background
+    --lightgray: #e5dec9 !important;     // Subtle structural lines
+    --gray: #7a7565 !important;          // Muted metadata accents
+    --darkgray: #2e2a24 !important;      // High-contrast charcoal text body color
+    --dark: #1a1713 !important;          // Bold dark titles and header rules
+    --secondary: #3b5087 !important;     // Muted historical blue for functional links
+    --tertiary: #526ca3 !important;      // Clear link hover states
+
+    // --- APPLY FANTASY FONT TO ITALICS (*text*) ---
+    em, i {
+      font-family: 'TimeScript', sans-serif !important;
+      font-style: normal !important;      // Keeps stylized structure clean without fake slanting
+    }
+
+    // --- STRUCTURAL CANVAS MAPPING ---
+    .page, #quartz-body, .center, article, footer, .graph, .graph > div, .graph-container, .graph-outer, canvas {
+      background-color: #F4EFE2 !important;
+      background: #F4EFE2 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    // --- STRUCTURAL SIDEBAR ACCENTS ---
+    .left.sidebar, .right.sidebar, .explorer, .explorer-content, .nav-files-container, .folder-outer, .mobile-only {
+      background-color: #E6DCB8 !important; // Deep organic sand background
+      background: #E6DCB8 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .left.sidebar, .right.sidebar { padding-left: 12px !important; padding-right: 12px !important; }
+    .explorer { padding-left: 15px !important; padding-right: 15px !important; }
+    .explorer h1, .explorer h2, .explorer button, #explorer-title, .right.sidebar h3, .right.sidebar h4, #graph-title {
+      padding-left: 15px !important; margin-bottom: 12px !important; background: transparent !important;
+    }
+
+    // --- INTEGRATED SEARCH BAR FIELDS ---
+    .search, #search-bar, .search-layout, .search-input, input[type="text"], .search-button, #search-container {
+      background-color: #E6DCB8 !important; background: #E6DCB8 !important; color: #2e2a24 !important;
+      border: 1px solid rgba(0,0,0,0.06) !important; border-radius: 6px !important; padding-left: 12px !important;
+    }
+
+    // --- DENSE TYPOGRAPHY SHIELD ---
+    body, p, li, span, .explorer a, .folder-title, .file-title, a {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      color: #2e2a24 !important;           
+    }
+  }
+
+  // ==========================================
+  // 🌙 OBSIDIAN DEFAULT DARK MODE PALETTE
+  // ==========================================
+  [data-theme="dark"], .theme-dark {
+    --light: #161617 !important;         
+    --lightgray: #2a2a2c !important;     
+    --gray: #646467 !important;          
+    --darkgray: #e1e1e6 !important;      
+    --dark: #ffffff !important;          
+    --secondary: #6085db !important;     
+    --tertiary: #83a2eb !important;      
+
+    em, i {
+      font-family: 'TimeScript', sans-serif !important;
+      font-style: normal !important;
+    }
+
+    .page, #quartz-body, .center, article, footer, .left.sidebar, .right.sidebar, .explorer, .explorer-content, .nav-files-container, .folder-outer, .graph, .graph > div, .graph-container, .graph-outer, canvas, .search, #search-bar, .search-layout, .search-input, input[type="text"], .search-button, #search-container {
+      background-color: #161617 !important; background: #161617 !important; border: none !important; box-shadow: none !important;
+    }
+
+    body, p, li, span, .explorer a, .folder-title, .file-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      color: #e1e1e6 !important;
+    }
+  }
 }
