@@ -1,12 +1,12 @@
 @use "./variables.scss" as *;
 
 // ==========================================
-// 📜 REGISTER CUSTOM FANTASY FONT
+// 📜 REGISTER CUSTOM FANTASY FONT (CLEAN BASE PATH)
 // ==========================================
 @font-face {
-  font-family: 'timescript'; // Must be lowercase to match Quartz's compiler output
-  // Uses the absolute URL with your exact case-sensitive filename to guarantee discovery
-  src: url('https://github.io') format('truetype'); 
+  font-family: 'timescript'; 
+  // Points directly to the simplified, lowercase filename asset
+  src: url('/Ancient-Chronicles-Archive/static/fonts/fantasy.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
     // --- APPLY FANTASY FONT TO ITALICS (*text*) ---
     em, i {
       font-family: 'timescript', sans-serif !important;
-      font-style: normal !important;      // Keeps stylized structure clean without fake slanting
+      font-style: normal !important;      
     }
 
     // --- STRUCTURAL CANVAS MAPPING ---
