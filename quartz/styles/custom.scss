@@ -1,11 +1,10 @@
 @use "./variables.scss" as *;
 
 // ==========================================
-// 📜 REGISTER CUSTOM FANTASY FONT (CLEAN BASE PATH)
+// 📜 REGISTER CUSTOM FANTASY FONT
 // ==========================================
 @font-face {
   font-family: 'timescript'; 
-  // Points directly to the simplified, lowercase filename asset
   src: url('/Ancient-Chronicles-Archive/static/fonts/fantasy.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
@@ -29,6 +28,8 @@
     em, i {
       font-family: 'timescript', sans-serif !important;
       font-style: normal !important;      
+      font-size: 1.25em !important;       // 🌟 ENLARGES THE FONT TO MATCH STANDARD UPPERCASE LETTERS
+      letter-spacing: 0.03em !important;  // Gives the detailed lettering a tiny bit of extra breathing room
     }
 
     // --- STRUCTURAL CANVAS MAPPING ---
@@ -81,6 +82,8 @@
     em, i {
       font-family: 'timescript', sans-serif !important;
       font-style: normal !important;
+      font-size: 1.25em !important;       // 🌟 MATCHES SIZE BOOSTER IN DARK MODE
+      letter-spacing: 0.03em !important;
     }
 
     .page, #quartz-body, .center, article, footer, .left.sidebar, .right.sidebar, .explorer, .explorer-content, .nav-files-container, .folder-outer, .graph, .graph > div, .graph-container, .graph-outer, canvas, .search, #search-bar, .search-layout, .search-input, input[type="text"], .search-button, #search-container {
