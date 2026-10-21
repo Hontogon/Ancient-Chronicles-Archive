@@ -59,7 +59,7 @@ tong mansion
 
 
 - Akaton Etemology!!!   Akaton means "land of the wild" (Aka)wild + (ton)land. 
--  We also know that Akaton was named after the sacred god of time, Askalon (Kubo's spiritual ancestor), and one of the nature gods (Hogonon), one of the nature ancients spiritual ancestors.
+-  We also know that Akaton was named after the sacred god of time, Askalon (Kubo's spiritual ancestor), and one of the nature gods (Hons), one of the nature ancients spiritual ancestors.
 - So what if Askalon means "wild" in a sense. Askalon is the god of time. Kubo later talks about nobody being able to control time. so what is time? It is uncontrollable - wild...
 - Askalon's name signifies untambableness - wilderness.
 
@@ -92,21 +92,8 @@ also, now cratalek literally means: spirit of the breathless (a reanimated soul 
 
 
 akatonian functions as a root script with glypys representing roots derived  directly from the holy tongue.
-## Modern Akatonijian
 
-English arrives.
 
-People need symbols for English sounds.
-
-Instead of inventing a new alphabet...
-
-they recycle the ancient glyphs.
-
-So...
-
-the old **AKA** glyph gradually becomes the modern **A**.
-
-That feels incredibly believable.
 
 ---
 

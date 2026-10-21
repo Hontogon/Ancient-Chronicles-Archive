@@ -1,0 +1,1 @@
+The Three sacred powers of WW are the power of time, the power of nature, and the power of magic

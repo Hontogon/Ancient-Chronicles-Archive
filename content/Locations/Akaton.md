@@ -3,4 +3,4 @@ Akaton is the ancient name for the modern day province of [[Akatonijia]]. In the
 
 ---
 
-The name is derived from the combination of two of the [[Thirteen supreme gods]], [[Askalon]] the god of Time, and [[Hontgon]] the god of nature
+The name is derived from the combination of two of the [[Thirteen supreme gods]], [[Askalon]] the god of Time, and [[Hons]] the god of nature
